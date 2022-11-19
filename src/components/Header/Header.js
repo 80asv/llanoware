@@ -15,7 +15,7 @@ const Header = () => {
 	return (
 		<header className='header'>
 			<nav className='nav'>
-				<img src="./assets/LlanoWare.png" alt="logo Llanoware" className='llanoware-logo'/>
+				<Links end to="/"><img src="./assets/LlanoWare.png" alt="logo Llanoware" className='llanoware-logo'/></Links>
 				<div className="items">
 					<Links end activeclassname="active" to="/">Inicio</Links>
 					<Links end activeclassname="active" to="/nosotros">Nosotros</Links>

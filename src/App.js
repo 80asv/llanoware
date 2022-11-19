@@ -5,7 +5,7 @@ import Inicio from "./pages/Inicio";
 import Nosotros from "./pages/Nosotros";
 import Footer from "./components/Footer/Footer";
 
-function App() {
+function App() {	
 	return (
 		<div className="App">
 			<Router>

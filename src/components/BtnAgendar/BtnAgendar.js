@@ -8,6 +8,7 @@ const BtnAgendar = () => {
 		color: white;
 		font-weight: 700;
 		font-size: 18px;
+		font-family: 'Montserrat Alternates', sans-serif;
 		padding: 20px;
 		background-color: #002333;
 		border-radius: 10px;

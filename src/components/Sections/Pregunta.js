@@ -1,6 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
-const Pregunta = ({ pregunta, texto }) => {
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+import { useEffect } from "react";
+
+const Pregunta = ({ pregunta, texto, transicion }) => {
+	useEffect(() => {
+		AOS.init();
+		AOS.refresh();
+	}, []);
 	const Pregunta = styled.h3({
 		color: "#002333",
 		fontWeight: "700",
@@ -17,7 +25,7 @@ const Pregunta = ({ pregunta, texto }) => {
 		flexDirection: "column",
 	})
 	return (
-		<Contenedor className={pregunta}>
+		<Contenedor className={pregunta} data-aos={transicion}>
 			<Pregunta>{pregunta}</Pregunta>
 			<Texto>{texto}</Texto>
 		</Contenedor>

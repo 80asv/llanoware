@@ -1,7 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+import { useEffect } from "react";
 
-export const Card = ({titulo, urlImg, descripcion}) => {
+export const Card = ({titulo, urlImg, descripcion, transicion }) => {
+
+    useEffect(() => {
+		AOS.init();
+		AOS.refresh();
+	}, []);
 
     const Tarjeta = styled.div({
         maxWidth: "395px",
@@ -39,7 +47,7 @@ export const Card = ({titulo, urlImg, descripcion}) => {
         color: "white",
     })
     return (
-        <Tarjeta>
+        <Tarjeta data-aos={transicion}>
             <PortadaCard>
                 <Titulo>{titulo}</Titulo>
             </PortadaCard>
