@@ -1,0 +1,24 @@
+.nosotros{
+    max-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1124px;
+    padding: 0 4rem;
+    margin: 6rem auto;
+}
+
+.nosotros div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nosotros h1{
+    font-size: 58px;
+    color: #002333;
+    margin: 10px 0;
+}
+
+

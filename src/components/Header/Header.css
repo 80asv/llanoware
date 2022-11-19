@@ -1,0 +1,25 @@
+header img {
+    height: auto;
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1124px;
+    margin: 0px auto;
+    padding: 50px 4rem 0px;
+    height: 70px;
+}
+
+.items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+}
+
+.active{
+    color: #FF5858;
+}

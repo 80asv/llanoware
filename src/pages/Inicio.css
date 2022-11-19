@@ -1,0 +1,45 @@
+.inicio,
+.preguntas,
+.areas,
+.ayuda{
+    min-height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1124px;
+    padding: 0 4rem;
+    margin: 0 auto;
+}
+.inicio div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.inicio h1,
+.areas h2,
+.ayuda h2{
+    font-size: 58px;
+    color: #002333;
+    margin: 10px 0;
+}
+.inicio p{
+    font-size: 24px;
+    line-height: 38px;
+}
+.preguntas{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    min-height: auto;
+    justify-content: flex-start;
+}
+.areas,
+.ayuda{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10rem;
+}
+

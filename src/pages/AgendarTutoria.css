@@ -1,0 +1,117 @@
+.container-form{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: flex-start;
+    max-width: 1124px;
+    padding: 0 4rem;
+    margin: 6rem auto;
+}
+.container-form h2{
+    font-size: 58px;
+    color: #002333;
+    margin: 10px 0;
+}
+.container-form p{
+    font-size: 24px;
+    line-height: 38px;
+}
+.container-form label{
+    font-size: 18px;
+}
+.container-form form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
+}
+#nombre,
+#correo,
+#fechaCita,
+#horaCita,
+#detalles{
+    height: 40px;
+    font-size: 24px;
+    padding: 20px;
+    outline: none;
+    border-radius: 18px;
+    border: 2px solid transparent;
+    transition: all .3s ease;
+}
+#nombre::placeholder,
+#correo::placeholder{
+    color: #cacaca;
+}
+#duracion{
+    outline: none;
+    font-size: 30px;
+    border-radius: 18px;
+    border: 2px solid transparent;
+    transition: all .3s ease;
+    padding: 8px;
+    width: 80px;
+}
+#fechaCita,
+#horaCita{
+    height: 20px;
+}
+#detalles{
+    resize: none;
+    height: 10rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 18px;
+}
+#nombre:focus,
+#correo:focus,
+#detalles:focus,
+#horaCita:focus,
+#fechaCita:focus,
+#duracion:focus{
+    border: 2px solid #ff5858;
+}
+.form-fecha{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    border-radius:25px;
+    background-color: #eef2ff80;
+    padding: 30px;
+}
+.form-datos-personales{
+    background-color: #eef2ff80;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    border-radius:25px;
+}
+.form-datos-personales h3,
+.form-fecha h3{
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+}
+.form-fecha p{
+    display: inline-block;
+    margin: 10px;
+}
+
+#agendar{
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 20px;
+    background-color: #002333;
+    border-radius: 20px;
+    width: 250px;
+    text-decoration: none;
+    border: 3px solid #D3D3D3;
+    transition: all .1s ease-in-out;
+    margin: 0 auto;
+}
+
+#agendar:hover{    
+    background-color: #FF5858;
+}
+
+
