@@ -18,10 +18,8 @@
     flex-direction: column;
     gap: 10px;
 }
-.inicio h1,
-.areas h2,
-.ayuda h2,
-.como-funciona h2{
+h1,
+h2{
     font-size: 58px;
     color: #002333;
     margin: 10px 0;
@@ -49,5 +47,11 @@
 .card-container_contacto{
     min-height: auto;
     margin-bottom: 4rem;
+    padding: 0 1rem;
 }
-
+.preguntas,
+.areas,
+.ayuda,
+.como-funciona{
+    padding: 0 1rem;
+}

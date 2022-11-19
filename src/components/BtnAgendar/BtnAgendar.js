@@ -18,7 +18,7 @@ const BtnAgendar = () => {
 		transition: all .1s ease-in-out;
 
 		&:hover{
-		background-color: #FF5858;
+			background-color: #FF5858;
 		}
 	`;
 

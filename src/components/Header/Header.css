@@ -23,3 +23,15 @@ nav{
 .active{
     color: #FF5858;
 }
+.Llanoware-small{
+    width: 55px;
+}
+
+@media screen and (max-width: 660px){
+    nav{
+        padding: 50px 1rem 0;
+    }
+    .items{
+        gap: 2px;
+    }
+}

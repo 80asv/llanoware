@@ -13,7 +13,7 @@ import CardContacto from '../components/Card/CardContacto';
 const Inicio = () => {
 	useEffect(() => {
 		AOS.init({
-			duration: 1000
+			duration: 500
 		});
 		AOS.refresh();
 	}, []);

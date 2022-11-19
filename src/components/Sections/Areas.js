@@ -3,20 +3,24 @@ import { Card } from '../Card/Card'
 import styled from 'styled-components'
 
 export const Areas = () => {
-    const Tarjetas = styled.div({
-        display: "flex",
-        justifyContent: "center",
-        flexWrap: "wrap",
-        gap: "4rem",
-        marginTop: "6rem"
-    })
+    const Tarjetas = styled.div`
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 4rem;
+        margin-top: 6rem;
+
+        @media screen and (max-width: 660px) {
+			    gap: 2rem;
+		    }
+    `;
   return (
     <section className='areas'>
         <h2>Areas enfocadas</h2>
         <Tarjetas className='cards'>
-            <Card titulo="Desarrollo web" urlImg="https://www.placeimg.com/300/300/animals" descripcion="Despliegue de paginas web, manejo de frameworks" transicion="fade-down-left"/>
-            <Card titulo="Desarrollo web" urlImg="https://www.placeimg.com/300/300/people" descripcion="Despliegue de paginas web, manejo de frameworks" transicion="fade-up-left"/>
-            <Card titulo="Desarrollo web" urlImg="https://www.placeimg.com/300/300/nature" descripcion="Despliegue de paginas web, manejo de frameworks" transicion="fade-down-right"/>
+            <Card titulo="NOse" urlImg="https://www.placeimg.com/300/300/animals" descripcion="Despliegue de paginas web, manejo de frameworks" transicion="fade-down-left"/>
+            <Card titulo="Proyectos Universitarios" urlImg="https://www.placeimg.com/300/300/people" descripcion="Temas visto en clase que son complicados" transicion="fade-up-left"/>
+            <Card titulo="Proyectos personales" urlImg="https://www.placeimg.com/300/300/nature" descripcion="Solucionamos errores y refactorizamos tu código" transicion="fade-down-right"/>
             <Card titulo="Desarrollo web" urlImg="https://www.placeimg.com/300/300/tech" descripcion="Despliegue de paginas web, manejo de frameworks" transicion="fade-up-right"/>
         </Tarjetas>
     </section>

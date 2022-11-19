@@ -29,15 +29,22 @@ const CardHelp = ({ icono, titulo, desc, transition }) => {
         font-size: 24px;
         text-align: center;
         transition: all .2s ease-in;
+
+        
     `;
     const Icono = styled(FontAwesomeIcon)`
         font-size: 94px;
         transition: all .2s ease-in;
         color: #002333;
+
+        @media screen and (max-width: 660px) {
+			font-size: 60px;
+		}
     `;
     const Desc = styled.p`
         font-size: 18px;
         text-align: center;
+        margin: 0;
     `;
     const Card = styled.div`
         width: 16rem;

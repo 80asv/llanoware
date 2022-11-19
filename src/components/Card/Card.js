@@ -11,20 +11,12 @@ export const Card = ({titulo, urlImg, descripcion, transicion }) => {
 		AOS.refresh();
 	}, []);
 
-    const Tarjeta = styled.div({
-        maxWidth: "395px",
-        height: "270px",
-        borderRadius: "32px",
-        boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
-        flexGrow: "1"
-    })
-
     const PortadaCard = styled.div({
         width: "100%",
         height: "156px",
         left: "228px",
         top: "2031px",
-        backgroundImage: `url(${urlImg})`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${urlImg})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         margin: "0",
@@ -34,6 +26,17 @@ export const Card = ({titulo, urlImg, descripcion, transicion }) => {
         borderTopLeftRadius: "32px",
         borderTopRightRadius: "32px",
     })
+
+    const Tarjeta = styled.div`
+        max-width: 395px;
+        height: 270px;
+        border-radius: 32px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        flex-grow: 1;
+        border-bottom: 5px solid #c2c2cb;
+    `;
+
+    
 
     const DescripcionCard = styled.p({
         fontSize: "16px",

@@ -78,4 +78,7 @@
 	.timeline-dot{
 		left:-4px;
 	}
+	.timeline-content p{
+		font-size: 16px;
+	}
 }

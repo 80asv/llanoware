@@ -5,6 +5,7 @@ import Inicio from "./pages/Inicio";
 import Nosotros from "./pages/Nosotros";
 import Footer from "./components/Footer/Footer";
 
+
 function App() {	
 	return (
 		<div className="App">
@@ -15,8 +16,8 @@ function App() {
 					<Route end path="/nosotros" element={<Nosotros/>}/>
 					<Route end path="/agendar" element={<AgendarTutoria/>}/>
 				</Routes>
+				<Footer/>
 			</Router>
-			<Footer/>
 		</div>
 	);
 }

@@ -9,17 +9,26 @@ const Pregunta = ({ pregunta, texto, transicion }) => {
 		AOS.init();
 		AOS.refresh();
 	}, []);
-	const Pregunta = styled.h3({
-		color: "#002333",
-		fontWeight: "700",
-		fontSize: "25px",
-	})
-	const Texto = styled.p({
-		color: "#002333",
-		fontSize: "24px",
-		lineHeight: "47px",
-		textAlign: "left"
-	})
+	const Pregunta = styled.h3`
+		color: #002333;
+		font-weight: 700;
+		font-size: 25px;
+
+		@media screen and (max-width: 660px) {
+			font-size: 24px;
+		}
+	`;
+	const Texto = styled.p`
+		color: #002333;
+		font-size: 24px;
+		line-height: 47px;
+		text-align: left;
+
+		@media screen and (max-width: 660px) {
+			font-size: 20px;
+			line-height: 32px;
+		}
+	`;
 	const Contenedor = styled.div({
 		display: "flex",
 		flexDirection: "column",

@@ -97,7 +97,6 @@
     display: inline-block;
     margin: 10px;
 }
-
 #agendar{
     color: white;
     font-weight: 700;
@@ -112,10 +111,36 @@
     transition: all .1s ease-in-out;
     margin: 0 auto;
 }
-
 #agendar:hover{    
     background-color: #FF5858;
     cursor: pointer;
 }
-
+@media screen and (max-width: 660px) {
+    .container-form{
+        padding: 0 1rem;
+    }
+    .container-form h2{
+        font-size: 32px;
+    }
+    .container-form p{
+        font-size: 17px;
+        line-height: 32px;
+    }
+    .form-datos-personales h3, .form-fecha h3{
+        font-size: 20px;
+    }
+    #nombre, #correo, #fechaCita, #horaCita, #detalles{
+        font-size: 16px;
+        height: 10px;
+    }
+    .form-fecha{
+        padding: 20px;
+    }
+    .form-datos-personales{
+        padding: 20px;
+    }
+    #detalles{
+        height: 8rem;
+    }
+}
 
