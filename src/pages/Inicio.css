@@ -1,7 +1,9 @@
 .inicio,
 .preguntas,
 .areas,
-.ayuda{
+.ayuda,
+.como-funciona,
+.card-container_contacto{
     min-height: calc(100vh - 120px);
     display: flex;
     flex-direction: row;
@@ -18,7 +20,8 @@
 }
 .inicio h1,
 .areas h2,
-.ayuda h2{
+.ayuda h2,
+.como-funciona h2{
     font-size: 58px;
     color: #002333;
     margin: 10px 0;
@@ -35,11 +38,16 @@
     justify-content: flex-start;
 }
 .areas,
-.ayuda{
+.ayuda,
+.como-funciona{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     margin-top: 10rem;
+}
+.card-container_contacto{
+    min-height: auto;
+    margin-bottom: 4rem;
 }
 

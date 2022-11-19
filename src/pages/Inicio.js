@@ -1,12 +1,14 @@
 import React from 'react'
-import BtnAgendar from '../components/BtnAgendar/BtnAgendar'
+import { useEffect } from "react";
 import { Areas } from '../components/Sections/Areas'
+import BtnAgendar from '../components/BtnAgendar/BtnAgendar'
+import ComoFunciona from '../components/Sections/ComoFunciona'
 import DejanosAyudarte from '../components/Sections/DejanosAyudarte'
 import Pregunta from '../components/Sections/Pregunta'
+import 'aos/dist/aos.css';
 import './Inicio.css';
 import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from "react";
+import CardContacto from '../components/Card/CardContacto';
 
 const Inicio = () => {
 	useEffect(() => {
@@ -30,6 +32,10 @@ const Inicio = () => {
 			</div>
 			<Areas/>
 			<DejanosAyudarte/>
+			<ComoFunciona/>
+			<div className='card-container_contacto'>
+				<CardContacto/>
+			</div>
 		</main>
 	)
 }
