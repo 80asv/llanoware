@@ -6,22 +6,24 @@ import Nosotros from "./pages/Nosotros";
 import Footer from "./components/Footer/Footer";
 import MenuDesplegable from "./components/MenuDesplegable/MenuDesplegable";
 import MenuContextProvider from "./context/MenuContext";
-import { MenuContext } from './context/MenuContext';
+import LogoContextProvider from "./context/LogoContext";
 
 
 function App() {	
 	return (
 		<MenuContextProvider>
-			<Router>
-				<MenuDesplegable/>
-				<Header/>
-				<Routes>
-					<Route end path="/" element={<Inicio/>}/>
-					<Route end path="/nosotros" element={<Nosotros/>}/>
-					<Route end path="/agendar" element={<AgendarTutoria/>}/>
-				</Routes>
-				<Footer/>
-			</Router>
+			<LogoContextProvider>
+				<Router>
+					<MenuDesplegable/>
+					<Header/>
+					<Routes>
+						<Route end path="/" element={<Inicio/>}/>
+						<Route end path="/nosotros" element={<Nosotros/>}/>
+						<Route end path="/agendar" element={<AgendarTutoria/>}/>
+					</Routes>
+					<Footer/>
+				</Router>
+			</LogoContextProvider>
 		</MenuContextProvider>
 	);
 }

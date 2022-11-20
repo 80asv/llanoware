@@ -1,5 +1,5 @@
 header img {
-    height: auto;
+    height: 60px;
     cursor: pointer;
 }
 
@@ -43,5 +43,8 @@ nav{
     }
     .btn-open{
         display: block;
+    }
+    header img {
+        height: 40px;
     }
 }

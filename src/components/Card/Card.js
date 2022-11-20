@@ -34,6 +34,11 @@ export const Card = ({titulo, urlImg, descripcion, transicion }) => {
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         flex-grow: 1;
         border-bottom: 5px solid #c2c2cb;
+
+        @media screen and (max-width: 660px){
+            max-width: none;
+            width: 100%;
+        }
     `;
 
     

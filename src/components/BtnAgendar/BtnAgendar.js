@@ -14,6 +14,7 @@ const BtnAgendar = () => {
 		border-radius: 10px;
 		max-width: 167px;
 		text-decoration: none;
+		text-align: center;
 		border: 3px solid #D3D3D3;
 		transition: all .1s ease-in-out;
 
@@ -22,7 +23,7 @@ const BtnAgendar = () => {
 		}
 	`;
 
-	return <LinkAgendar to="/agendar">Agendar una cita</LinkAgendar>
+	return <LinkAgendar to="/agendar">Agendar turoria</LinkAgendar>
   
 }
 

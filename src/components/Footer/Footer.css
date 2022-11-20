@@ -1,5 +1,4 @@
 footer{
-    height: 30vh;
     bottom: 0;
     background-color: #002333;
     color: #70768d;
@@ -60,19 +59,19 @@ footer .links > *:hover,
 .sub-footer p:hover{
     color: white;
 }
-footer img.logo{
-    height: 25%;
+footer img.logo-footer-large{
+    height: 4.5rem;
 }
 
 @media screen and (max-width: 660px) {
 
     footer{
         padding:  4rem 4rem 3rem 4rem;
-        height: 50vh;
+        min-height: 50vh;
     }
 
-    footer img.logo{
-        height: 10%;
+    footer img.logo-footer{
+        height: 9rem;
     }
 
     footer .container{
