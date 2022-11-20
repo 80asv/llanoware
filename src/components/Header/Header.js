@@ -12,7 +12,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
 	const [ancho] = useState(window.innerWidth);
-	const [isSmall, setIsSmall] = useState(false);
+	const [isSmall, setIsSmall] = useState(true);
 	const estadoMenu = useContext(MenuContext);
 
 	const handleResize = () => {
@@ -51,7 +51,7 @@ const Header = () => {
 					<Links end activeclassname="active" to="/nosotros">Nosotros</Links>
 					<BtnAgendar/>
 				</div>
-				<div onClick={handleClick}><FontAwesomeIcon icon={faBars}/></div>
+				<div className='btn-open' onClick={handleClick}><FontAwesomeIcon icon={faBars}/></div>
 			</nav>
 		</header>
 	)

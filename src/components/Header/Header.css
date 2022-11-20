@@ -26,19 +26,22 @@ nav{
 .Llanoware-small{
     width: 55px;
 }
-.btn-menu{
-    position: absolute;
-    right: 30px;
-    top: 31px;
-    cursor: pointer;
-    transition: all 300ms ease;
+
+.btn-open{
+    display: none;
+    font-size: 28px;
+    color: #ff5858;
 }
+
 
 @media screen and (max-width: 660px){
     nav{
-        padding: 50px 1rem 0;
+        padding: 50px 2rem 0;
     }
     .items{
         display: none;
+    }
+    .btn-open{
+        display: block;
     }
 }

@@ -18,10 +18,10 @@ export const Areas = () => {
     <section className='areas'>
         <h2>Areas enfocadas</h2>
         <Tarjetas className='cards'>
-            <Card titulo="NOse" urlImg="https://www.placeimg.com/300/300/animals" descripcion="Despliegue de paginas web, manejo de frameworks" transicion="fade-down-left"/>
-            <Card titulo="Proyectos Universitarios" urlImg="https://www.placeimg.com/300/300/people" descripcion="Temas visto en clase que son complicados" transicion="fade-up-left"/>
-            <Card titulo="Proyectos personales" urlImg="https://www.placeimg.com/300/300/nature" descripcion="Solucionamos errores y refactorizamos tu código" transicion="fade-down-right"/>
-            <Card titulo="Desarrollo web" urlImg="https://www.placeimg.com/300/300/tech" descripcion="Despliegue de paginas web, manejo de frameworks" transicion="fade-up-right"/>
+            <Card titulo="NOse" urlImg="https://www.placeimg.com/300/300/animals" descripcion="Despliegue de paginas web, manejo de frameworks" transicion="fade-up"/>
+            <Card titulo="Proyectos Universitarios" urlImg="https://www.placeimg.com/300/300/people" descripcion="Temas visto en clase que son complicados" transicion="fade-up"/>
+            <Card titulo="Proyectos personales" urlImg="https://www.placeimg.com/300/300/nature" descripcion="Solucionamos errores y refactorizamos tu código" transicion="fade-up"/>
+            <Card titulo="Desarrollo web" urlImg="https://www.placeimg.com/300/300/tech" descripcion="Despliegue de paginas web, manejo de frameworks" transicion="fade-up"/>
         </Tarjetas>
     </section>
   )
