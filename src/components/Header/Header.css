@@ -26,12 +26,19 @@ nav{
 .Llanoware-small{
     width: 55px;
 }
+.btn-menu{
+    position: absolute;
+    right: 30px;
+    top: 31px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
 
 @media screen and (max-width: 660px){
     nav{
         padding: 50px 1rem 0;
     }
     .items{
-        gap: 2px;
+        display: none;
     }
 }

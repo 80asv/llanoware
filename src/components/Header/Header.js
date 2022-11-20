@@ -1,8 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import BtnAgendar from '../BtnAgendar/BtnAgendar'
 import './Header.css';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import MenuDesplegable from '../MenuDesplegable/MenuDesplegable';
+import BtnMenu from '../BtnMenu/BtnMenu';
 
 const Header = () => {
 
@@ -31,6 +35,17 @@ const Header = () => {
 		font-size: 18px;
 	`;
 
+	let refBoton = useRef();
+	let refPanel = useRef();
+
+	const handleClick = () => {
+		if(refBoton.current.classList.contains('btn-menu')){
+            //refMenu.current.classList.add('closed');
+            //refPanel.current.classList.remove('panel-closed');
+			console.log(refBoton);
+        }
+	}
+
 	return (
 		<header className='header'>
 			<nav className='nav'>
@@ -44,6 +59,7 @@ const Header = () => {
 					<Links end activeclassname="active" to="/nosotros">Nosotros</Links>
 					<BtnAgendar/>
 				</div>
+				<BtnMenu text="Abrir" refBtn={refBoton} handleClick={handleClick}/>
 			</nav>
 		</header>
 	)

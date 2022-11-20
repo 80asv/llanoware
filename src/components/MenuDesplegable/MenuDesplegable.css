@@ -1,0 +1,8 @@
+.closed{
+    transform: translateY(-288px);
+}
+
+.panel-closed{
+    opacity: 0;
+    visibility: hidden;
+}
