@@ -5,11 +5,13 @@ import Inicio from "./pages/Inicio";
 import Nosotros from "./pages/Nosotros";
 import Footer from "./components/Footer/Footer";
 import MenuDesplegable from "./components/MenuDesplegable/MenuDesplegable";
+import MenuContextProvider from "./context/MenuContext";
+import { MenuContext } from './context/MenuContext';
 
 
 function App() {	
 	return (
-		<div className="App">
+		<MenuContextProvider>
 			<Router>
 				<MenuDesplegable/>
 				<Header/>
@@ -20,7 +22,7 @@ function App() {
 				</Routes>
 				<Footer/>
 			</Router>
-		</div>
+		</MenuContextProvider>
 	);
 }
 
