@@ -22,7 +22,7 @@ const Inicio = () => {
 			<div className='inicio'>
 				<div>
 				<h1>Software Llanero<br/>para el mundo entero</h1>
-				<p>Somos una empresa enfocada a ayudarte en<br/>temas de programación y desarrollo de<br/>software</p>
+				<p>Somos una empresa enfocada a ayudarte en<br/>temas de <b>programación y desarrollo de<br/>software</b></p>
 				<BtnAgendar/> 
 				</div>
 			</div>

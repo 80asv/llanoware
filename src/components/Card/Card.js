@@ -29,7 +29,6 @@ export const Card = ({titulo, urlImg, descripcion, transicion }) => {
 
     const Tarjeta = styled.div`
         max-width: 395px;
-        height: 270px;
         border-radius: 32px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         flex-grow: 1;
@@ -44,7 +43,8 @@ export const Card = ({titulo, urlImg, descripcion, transicion }) => {
     
 
     const DescripcionCard = styled.p({
-        fontSize: "16px",
+        fontSize: "18px",
+        lineHeight: "34px",
         padding: "20px"
     })
 

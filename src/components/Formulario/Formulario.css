@@ -1,21 +1,3 @@
-.container-form{
-    display: flex;
-    flex-direction: column;
-    
-    align-items: flex-start;
-    max-width: 1124px;
-    padding: 0 4rem;
-    margin: 6rem auto;
-}
-.container-form h2{
-    font-size: 58px;
-    color: #002333;
-    margin: 10px 0;
-}
-.container-form p{
-    font-size: 24px;
-    line-height: 38px;
-}
 .container-form label{
     font-size: 18px;
 }
@@ -116,16 +98,6 @@
     cursor: pointer;
 }
 @media screen and (max-width: 660px) {
-    .container-form{
-        padding: 0 1rem;
-    }
-    .container-form h2{
-        font-size: 32px;
-    }
-    .container-form p{
-        font-size: 17px;
-        line-height: 32px;
-    }
     .form-datos-personales h3, .form-fecha h3{
         font-size: 20px;
     }
@@ -141,6 +113,10 @@
     }
     #detalles{
         height: 8rem;
+    }
+    #agendar{
+        font-size: 16px;
+        width: 210px;
     }
 }
 
