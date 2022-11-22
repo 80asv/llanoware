@@ -13,8 +13,7 @@ function App() {
 	return (
 		<MenuContextProvider>
 			<LogoContextProvider>
-				<HashRouter>
-					
+				<Router>
 						<MenuDesplegable/>
 						<Header/>
 						<Routes>
@@ -23,8 +22,7 @@ function App() {
 							<Route end path="/agendar" element={<AgendarTutoria/>}/>
 						</Routes>
 						<Footer/>
-					
-				</HashRouter>
+				</Router>
 			</LogoContextProvider>
 		</MenuContextProvider>
 	);
