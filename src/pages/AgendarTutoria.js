@@ -35,8 +35,8 @@ const AgendarTutoria = () => {
 	return (
 		<main>
 			<AgendarStyles className='container-form'>
-				<h2>Agendemos una Tutoría</h2>
-				<p>Diligencia el siguiente formulario en el que nos darás todos los detalles y la razón por la que quieres agendar una tutoría</p>
+				<h2>Agendemos una Tutoria</h2>
+				<p>Diligencia el siguiente formulario en el que nos daras todos los detalles y para qué quieres la tutoria</p>
 				<br />
 				<Formulario/>
 			</AgendarStyles>

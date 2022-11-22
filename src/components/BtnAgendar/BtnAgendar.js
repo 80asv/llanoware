@@ -23,7 +23,7 @@ const BtnAgendar = () => {
 		}
 	`;
 
-	return <LinkAgendar to="/agendar">Agendar turoría</LinkAgendar>
+	return <LinkAgendar to="/agendar">Agendar turoria</LinkAgendar>
   
 }
 

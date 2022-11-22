@@ -22,7 +22,7 @@ const BtnAgendarResponsive = ({ handleClick }) => {
 		}
 	`;
 
-	return <LinkAgendarResponsive onClick={handleClick} to="/agendar">Agendar turoría</LinkAgendarResponsive>
+	return <LinkAgendarResponsive onClick={handleClick} to="/agendar">Agendar turoria</LinkAgendarResponsive>
   
 }
 
