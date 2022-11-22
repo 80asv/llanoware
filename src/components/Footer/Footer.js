@@ -18,7 +18,7 @@ const Footer = () => {
 		<footer>
 			<div className='container'>
 				{
-					logoCtx.isSmall ? <img className='logo-footer' src="./assets/LlanoWare-soloInvert.png" alt="Llanoware" /> : <img className='logo-footer-large' src="./assets/LlanoWareInvert.png" alt="Llanoware" />
+					logoCtx.isSmall ? <img className='logo-footer' src="./LlanoWare-soloInvert.png" alt="Llanoware" /> : <img className='logo-footer-large' src="./LlanoWareInvert.png" alt="Llanoware" />
 				}
 				<div className='links'>
 					<NavLink end activeclassname="active" to="/">Inicio</NavLink>

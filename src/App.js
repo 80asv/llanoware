@@ -17,9 +17,10 @@ function App() {
 					<MenuDesplegable/>
 					<Header/>
 					<Routes>
-						<Route end path="/" element={<Inicio/>}/>
+						<Route path="/" element={<Inicio/>}/>
 						<Route end path="/nosotros" element={<Nosotros/>}/>
 						<Route end path="/agendar" element={<AgendarTutoria/>}/>
+						<Route path="/*" element={<h2>Pagina no encontrada</h2>}/>
 					</Routes>
 					<Footer/>
 				</HashRouter>

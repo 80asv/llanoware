@@ -1,6 +1,7 @@
 {
   "name": "llanoware",
   "version": "0.1.0",
+  "homepage": "https://80asv.github.io/llanoware",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",

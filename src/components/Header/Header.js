@@ -45,7 +45,7 @@ const Header = () => {
 		<header className='header'>
 			<nav className='nav'>
 				<Links end activeclassname="active" to="/" className="links">
-					<img className='Llanoware-large' src="./assets/LLanoWare.png" alt="llano" />
+					<img className='Llanoware-large' src="./LlanoWare.png" alt="llano" />
 				</Links>
 				<div className="items">
 					<Links end activeclassname="active" to="/">Inicio</Links>
