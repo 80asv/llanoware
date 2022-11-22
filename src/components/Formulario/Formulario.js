@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Loader from '../Loader/Loader';
 import './Formulario.css'
 import { Toaster, toast } from 'react-hot-toast';
 
@@ -17,11 +16,14 @@ const initialForm = {
 const Formulario = () => {
     
 	const [form, setForm] = useState(initialForm);
-    const [loading, isLoading] = useState(false);
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		setForm(initialForm);
+        toast(' 🎉 ¡Datos enviados con éxito! 🎉', {
+            position: "bottom-center",
+            duration: 6000
+        });
 	}
 
 	const handlerChange = (e) => {
@@ -29,13 +31,6 @@ const Formulario = () => {
             ...form,
             [e.target.name]: e.target.value
         })
-    }
-
-    const handleClick = () => {
-        toast(' 🎉 ¡Datos enviados con éxito! 🎉', {
-            position: "bottom-center",
-            duration: 6000
-        });
     }
 
     return (
@@ -56,7 +51,6 @@ const Formulario = () => {
                 <label htmlFor="detalles">Describe brevemente tu problema</label>
                 <textarea name="detalles" id="detalles" cols="30" rows="10" value={form.detalles} onChange={handlerChange}></textarea>
             </div>
-            {loading && <Loader/>}
             <Toaster/>
             <input type="submit" value="Agendar mi cita" id='agendar'/>
         </form>

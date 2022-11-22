@@ -17,6 +17,7 @@ const MenuDesplegable = () => {
 		font-weight: 700;
 		text-decoration: none;
 		font-size: 18px;
+        color: #002333;
 	`;
 
     return (
