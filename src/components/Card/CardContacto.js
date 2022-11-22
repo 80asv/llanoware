@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import { useEffect } from "react";
+import SocialLinks from '../SocialLinks/SocialLinks';
+import { faDiscord, faTelegram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const CardContacto = () => {
 
@@ -22,10 +24,18 @@ const CardContacto = () => {
         margin: auto;
         padding: 59px 48px;
         box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-
+        .links{
+            width: 15rem;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
         @media screen and (max-width: 660px) {
 			flex-direction: column;
             gap: 3rem;
+            .links{
+                width: 100%;
+            }
 		}
     `;
 
@@ -60,39 +70,17 @@ const CardContacto = () => {
 		}
     `;
 
-    const Boton = styled.button`
-        padding: 20px;
-        background-color: #002333;
-        border-radius: 23px;
-        font-weight: 500;
-        font-size: 28px;
-        font-family: 'Montserrat Alternates', sans-serif;
-        border: none;
-        width: 176px;
-        height: 78px;
-        color: white;
-        transition: all .1s ease-in-out;
-
-        &:hover{
-            cursor: pointer;
-            background-color: #eef2ff;
-            color: #FF5858;
-        }
-
-        @media screen and (max-width: 660px) {
-			font-size: 16px;
-            width: 150px;
-            height: 60px;
-		}
-    `;
-
     return (
         <Tarjeta className='card-contacto' data-aos="fade-up">
             <Texto>
                 <Titulo>¿Tienes otro tipo de dudas?</Titulo>
-                <Parrafo>Aquí te dejamos nuestra<br/>linea de WhatsApp ;)</Parrafo>
+                <Parrafo>Aquí te dejamos nuestras<br/>lineas de atención ;)</Parrafo>
             </Texto>
-            <Boton>Escribir</Boton>
+            <div className='links'>
+                <SocialLinks link="https://www.discord.com" text="Dicord" icon={faDiscord} color="#6178c9"/>
+                <SocialLinks link="https://telegram.org/" text="Telegram" icon={faTelegram} color="#2AABEE"/>
+                <SocialLinks link="https://www.whatsapp.com" text="WhatsApp" icon={faWhatsapp} color="#25d366"/>
+            </div>
         </Tarjeta>
     )
 }

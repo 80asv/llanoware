@@ -27,11 +27,11 @@ const Footer = () => {
 				<div className='sub-footer'>
 					<p>UMD</p>
 					<div className='icons'>
-						<a href=""><FontAwesomeIcon icon={faGithub}/></a>
-						<a href=""><FontAwesomeIcon icon={faInstagram}/></a>
-						<a href=""><FontAwesomeIcon icon={faTwitter}/></a>
+						<a href="https://www.github.com"><FontAwesomeIcon icon={faGithub}/></a>
+						<a href="https://www.instagram.com"><FontAwesomeIcon icon={faInstagram}/></a>
+						<a href="https://www.twitter.com"><FontAwesomeIcon icon={faTwitter}/></a>
 					</div>
-					<p>todos los derechos<br/>reservados</p>
+					<p>Todos los derechos<br/>reservados</p>
 				</div>
 			</div>
 		</footer>

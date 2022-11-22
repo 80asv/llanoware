@@ -28,7 +28,7 @@ const Inicio = () => {
 			</div>
 			<div className='preguntas' data-aos="fade-down-right">
 				<Pregunta pregunta="¿Qué ofrecemos?" texto="Llanoware brinda apoyo integral y transversal en el área de la programación, diseño y desarrollo de software por medio de asesorías y consultorías académicas" transicion="fade-down"/>
-				<Pregunta pregunta="¿A quiénes ayudamos?" texto="Brindamos ayuda a todos aquellas personas que como nosotros, aman el mundo de la programacion. Asi que si eres un estudiante que busca ayuda para resolver dudas en cuanto a programacion, o no sabes como iniciar un proyecto. Estamos para ayudarte!" transicion="fade-up"/>
+				<Pregunta pregunta="¿A quiénes ayudamos?" texto="Brindamos ayuda a todos aquellas personas que como nosotros, aman el mundo de la programación. Asi que si eres un estudiante que busca ayuda para resolver dudas en cuanto a programacion, o no sabes como iniciar un proyecto. Estamos para ayudarte!" transicion="fade-up"/>
 			</div>
 			<Areas/>
 			<DejanosAyudarte/>
