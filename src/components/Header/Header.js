@@ -1,4 +1,4 @@
-import React, { useEffect, useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import { MenuContext } from '../../context/MenuContext';
 import { LogoContext } from '../../context/LogoContext';
 import { NavLink } from 'react-router-dom'
@@ -40,14 +40,12 @@ const Header = () => {
 		estadoMenu.setMenu(!estadoMenu.menu);
 	}
 
-	console.log(logoCtx)
-	console.log(logoCtx.isSmall)
 
 	return (
 		<header className='header'>
 			<nav className='nav'>
-				<Links end to="/" className="links">
-				<img className='Llanoware-large' src="./assets/LLanoWare.png" alt="llano" />
+				<Links end activeclassname="active" to="/" className="links">
+					<img className='Llanoware-large' src="./assets/LLanoWare.png" alt="llano" />
 				</Links>
 				<div className="items">
 					<Links end activeclassname="active" to="/">Inicio</Links>
